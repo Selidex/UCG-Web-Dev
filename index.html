@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>How To Deploy A CodePen Using Google Pages</title>
+  </head>
+  <body>
+    <h1 id="name">How To Deploy A CodePen Using Google Pages</h1>
+    <h1>Step 1: Linking Codepen to Github</h1>
+    <ol>
+      <li>If you do not have one already, create a <a href="https://github.com/">GitHub</a> account using the same email you used to create your CodePen account. If you need to change/add an email to your CodePen, you can do so <a href="https://codepen.io/settings/account">here</a></li>
+      <li>Log into CodePen using Github.</li>
+    </ol>
+    <h1>Step 2: Transfer the CodePen to GitHub</h1>
+    <ol>
+      <li>Open up the pen you would like to host.</li>
+      <li>At the bottom of the screen find the Export button</li>
+      <li>Select "Save as GitHub Gist"</li>
+      <li>On your GitHub account, create a new repository</li>
+      <li>At the bottom of your repository, select "Import Code"</li>
+      <li>Copy the url from the Gist that you exported, and paste into the url bar in the repository</li>
+      <li>Wait for the files to import</li>
+    </ol>
+    <h1>Step 3: Enable Pages Hosting</h1>
+    <ol>
+      <li>In your repository, select Settings from the top bar</li>
+      <li>In the settings section, select Pages, underneath Code and automation</li>
+      <li>Underneath Branch, select main using the drop down menu, then click save</li>
+      <li>It can take some time to set up, but once it does, there should be an Enviroments section in the &ltcode&gt section of your repository. In this section should be github-pages. Click this.</li>
+      <li>Click "View Deployment" to view your website</li>
+    </ol>
+    <h1>Help, my site doesn't look like it does on CodePen!?!</h1>
+    <p>CodePen does not require linking your html page to your css page in order for stylings to be applied. This is not the case for GitHub Pages. Make sure you have a link to your css page in your &lthead&gt tag of your html. CodePen exports the css file as style.css, so your link should look like this:<br>&ltlink rel="stylesheet" href="style.css"&gt<br>Including this line in your html file links your html to your css file. You can make this edit by selecting your html file from the code segment of your repository (make sure to click on the file name itself, and not the blue comment section), and then click on the pencil on the top bars of the page to edit your html file.</p>
+    <h1>Help, my javascript isn't working?!?</h1>
+    <p>Unfortunately Github Pages doesn't do dynamic websites, meaning it can not run your javascript code server side. </p>
+  </body>
+</html>
